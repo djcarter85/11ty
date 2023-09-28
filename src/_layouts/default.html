@@ -9,6 +9,11 @@
 </head>
 
 <body>
+  <nav>
+    {% for navLink in navLinks %}
+    <a href="{{ navLink.url }}">{{ navLink.title }}</a>
+    {% endfor %}
+  </nav>
   {{ content }}
 </body>
 
